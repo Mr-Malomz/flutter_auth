@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<!-- FACEBOOK CONFIG HERE -->
+
+	<key>CFBundleURLTypes</key>
+	<array>
+	<dict>
+	<key>3063737807104291</key>
+	<array>
+		<string>3063737807104291</string>
+	</array>
+	</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>APP-ID</string>
+	<key>1ac7fd263c010d5a0a1b807ad589bd8c</key>
+	<string>CLIENT-TOKEN</string>
+	<key>flutter_auth</key>
+	<string>APP-NAME</string>
+
+	<!-- SECOND -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

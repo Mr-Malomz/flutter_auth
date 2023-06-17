@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/auth_service.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -8,6 +9,29 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  bool _isLoading = false;
+
+  _loginWithFacebook() {
+    setState(() {
+      _isLoading = true;
+    });
+    AuthService()
+        .loginWithFacebook()
+        .then((value) => {
+              setState(() {
+                _isLoading = false;
+              })
+            })
+        .catchError((e) {
+      setState(() {
+        _isLoading = false;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Error login into facebook!')),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +49,11 @@ class _LoginState extends State<Login> {
                 width: double.infinity,
                 height: 45.0,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: _isLoading
+                      ? null
+                      : () {
+                          _loginWithFacebook();
+                        },
                   child: Text(
                     'Login with Facebook',
                     style: TextStyle(
