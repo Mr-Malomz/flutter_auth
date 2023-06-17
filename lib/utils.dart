@@ -1,4 +1,4 @@
 class AppConstant {
-  final String projectId = "648d03cf671ce5d12522";
+  final String projectId = "REPLACE WITH PROJECT ID";
   final String endpoint = "https://cloud.appwrite.io/v1";
 }
