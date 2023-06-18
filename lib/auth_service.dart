@@ -15,7 +15,6 @@ class AuthService {
         .setEndpoint(AppConstant().endpoint)
         .setProject(AppConstant().projectId);
 
-    //get current session
     _account = Account(_client);
   }
 

@@ -3,24 +3,23 @@
 <plist version="1.0">
 <dict>
 <!-- FACEBOOK CONFIG HERE -->
-
 	<key>CFBundleURLTypes</key>
 	<array>
 	<dict>
-	<key>3063737807104291</key>
+	<key>REPLACE WITH APP ID</key>
 	<array>
-		<string>3063737807104291</string>
+		<string>REPLACE WITH APP ID</string>
 	</array>
 	</dict>
 	</array>
 	<key>FacebookAppID</key>
 	<string>APP-ID</string>
-	<key>1ac7fd263c010d5a0a1b807ad589bd8c</key>
+	<key>REPLACE WITH CLIENT TOKEN</key>
 	<string>CLIENT-TOKEN</string>
 	<key>flutter_auth</key>
 	<string>APP-NAME</string>
+<!-- FACEBOOK END HERE -->
 
-	<!-- SECOND -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
